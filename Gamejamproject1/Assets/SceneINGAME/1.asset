@@ -17,5 +17,5 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
   - text: Hello Man!!
     speaker: {fileID: 11400000, guid: 00acbd11e874b3448a82b247113ac4d3, type: 2}
-  background: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  background: {fileID: 21300000, guid: b58e3b1e28bf6014a90513ba006bdb52, type: 3}
   nextScene: {fileID: 11400000, guid: 537b92ff958c59949ad7a67f0a0e3c42, type: 2}

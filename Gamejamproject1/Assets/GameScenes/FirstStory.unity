@@ -374,6 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barText: {fileID: 2134800283}
   personNameText: {fileID: 1997580757}
+  background: {fileID: 1780006587}
 --- !u!1 &1756297378
 GameObject:
   m_ObjectHideFlags: 0

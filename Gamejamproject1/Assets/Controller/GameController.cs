@@ -11,7 +11,6 @@ public class GameController : MonoBehaviour
     void Start()
     {
         bottombar.PlayScene(currentScene);
-       
     }
 
     // Update is called once per frame
