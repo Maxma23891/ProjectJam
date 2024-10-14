@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public StoryScene currentScene;
-    public BottomBarController bottombar;
+    public DialogueManager bottombar;
     
     void Start()
     {
