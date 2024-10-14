@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.AnimatedValues;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
     public StoryScene currentScene;
     public BottomBarController bottombar;
+    
     void Start()
     {
         bottombar.PlayScene(currentScene);
+       
     }
 
     // Update is called once per frame
@@ -23,9 +26,14 @@ public class GameController : MonoBehaviour
                 {
                     currentScene = currentScene.nextScene;
                     bottombar.PlayScene(currentScene);
+                    
                 }
-                bottombar.PlayNextSentence();
+                else
+                {
+                    bottombar.PlayNextSentence();
+                }
             }
         }
+
     }
 }
