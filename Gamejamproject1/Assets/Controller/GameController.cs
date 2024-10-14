@@ -23,7 +23,8 @@ public class GameController : MonoBehaviour
             {
                 if (bottombar.IsLastSentence())
                 {
-                    NextScene();
+                    currentScene = currentScene.nextScene;
+                    bottombar.PlayScene(currentScene);
                 }
                 else
                 {
@@ -35,8 +36,8 @@ public class GameController : MonoBehaviour
 
     }
 
-    public void NextScene(){
-        currentScene = currentScene.nextScene;
+    public void nextChoiceScene(StoryScene nextscene){
+        currentScene = nextscene;
         bottombar.PlayScene(currentScene);
     }
 }

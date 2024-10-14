@@ -17,6 +17,7 @@ public class StoryScene : ScriptableObject
     {
         public string Text;
         public string Key;
+        public StoryScene choiceScene;
     }
 
     [System.Serializable]

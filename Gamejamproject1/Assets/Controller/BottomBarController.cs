@@ -74,10 +74,10 @@ public class BottomBarController : MonoBehaviour
         foreach (StoryScene.Choice choices in currentScene.choiceText){
             GameObject obj = Instantiate(choiceButton, choiceParent);
             obj.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = choices.Text;
-            obj.GetComponent<Button>().onClick.AddListener(() => MakeChoice(choices.Key, 1));
+            obj.GetComponent<Button>().onClick.AddListener(() => MakeChoice(choices.Key, 1, choices.choiceScene));
         }
     }
-    private void MakeChoice(string key, int value)
+    private void MakeChoice(string key, int value,StoryScene scene)
     {
         ChoiceManager.Instance.SetChoice(key, value); // Store the choice
         Debug.Log($"Choice made: {key} = {value}");
@@ -85,7 +85,7 @@ public class BottomBarController : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-        GameController.NextScene();
+        GameController.nextChoiceScene(scene);
     }
 
 }
