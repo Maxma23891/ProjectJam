@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class BottomBarController : MonoBehaviour
 {
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
+    public Image background;
 
     private int sentenceIndex = -1;
     private StoryScene currentScene;
@@ -21,6 +23,9 @@ public class BottomBarController : MonoBehaviour
     public void PlayScene(StoryScene scene)
     {
         currentScene = scene;
+        if (scene.background != null){
+            background.sprite = scene.background;
+        }
         sentenceIndex = -1;
         PlayNextSentence();
     }
