@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5e5dceea53b89947a2aeeddf5211cfe, type: 3}
-  m_Name: 2
+  m_Name: TestChoice
   m_EditorClassIdentifier: 
   sentences:
-  - text: How are you doing
-    speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
-  - text: I am Fine
-    speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
+  - text: You want Shelter right?
+    speaker: {fileID: 11400000, guid: 00acbd11e874b3448a82b247113ac4d3, type: 2}
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 48bd0ff23219c424bb7d7f09b118ddbe, type: 2}
-  isChoice: 0
-  choiceText: []
+  nextScene: {fileID: 11400000, guid: f6f86cd8842c9634b8e1dd8f85b8ba2e, type: 2}
+  isChoice: 1
+  choiceText:
+  - Text: Yes
+    Key: Yes1
+  - Text: No
+    Key: No1
