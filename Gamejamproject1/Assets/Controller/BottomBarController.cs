@@ -9,6 +9,9 @@ public class BottomBarController : MonoBehaviour
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
     public Image background;
+    public Transform choiceParent;
+    public GameObject choiceButton;
+    public GameController GameController;
 
     private int sentenceIndex = -1;
     private StoryScene currentScene;
@@ -18,7 +21,6 @@ public class BottomBarController : MonoBehaviour
     {
         PLAYING, COMPLETED
     }
-
 
     public void PlayScene(StoryScene scene)
     {
@@ -63,7 +65,29 @@ public class BottomBarController : MonoBehaviour
                 break;
             }
         }
+        if (currentScene.isChoice){
+            ShowChoice();
+        }
     }
+
+    private void ShowChoice(){
+        foreach (StoryScene.Choice choices in currentScene.choiceText){
+            GameObject obj = Instantiate(choiceButton, choiceParent);
+            obj.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = choices.Text;
+            obj.GetComponent<Button>().onClick.AddListener(() => MakeChoice(choices.Key, 1));
+        }
+    }
+    private void MakeChoice(string key, int value)
+    {
+        ChoiceManager.Instance.SetChoice(key, value); // Store the choice
+        Debug.Log($"Choice made: {key} = {value}");
+        foreach (Transform child in choiceParent)
+        {
+            Destroy(child.gameObject);
+        }
+        GameController.NextScene();
+    }
+
 }
 
 
