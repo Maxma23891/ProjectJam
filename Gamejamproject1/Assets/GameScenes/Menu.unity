@@ -789,17 +789,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502755842}
   m_CullTransparentMesh: 1
---- !u!114 &539112386 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4504569059000710634, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-  m_PrefabInstance: {fileID: 551441885439710044}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94c40480e2a517b41b5ecb0271732c6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &598732585
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +872,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539112386}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
         m_MethodName: ClickStart
         m_Mode: 1
@@ -1504,7 +1493,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539112386}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
         m_MethodName: ContinueButtonClick
         m_Mode: 1
@@ -2001,7 +1990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBoxParent: {fileID: 199479676}
-  textBox: {fileID: 1692768668768151784, guid: ac1abeed2d55e8d48a78451019532dab, type: 3}
+  textBox: {fileID: 1692768668768151784, guid: e44858a33f6f4434cb58c7ca96ecfea8, type: 3}
   currentScene: {fileID: 11400000, guid: 8df2a74aa6199c741800bddd24338679, type: 2}
   Menu: {fileID: 1150324862}
   waittime: 0.05
@@ -2269,53 +2258,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1079.6436
-      objectReference: {fileID: 0}
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 539.0911
-      objectReference: {fileID: 0}
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 107.783226
-      objectReference: {fileID: 0}
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463598815685072392, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4504569059000710634, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
       propertyPath: SceneName
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664377114112067109, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
-      propertyPath: m_Name
-      value: LevelLoader
       objectReference: {fileID: 0}
     - target: {fileID: 6399561751432580777, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -2325,11 +2270,55 @@ PrefabInstance:
       propertyPath: m_Alpha
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1079.6436
+      objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 539.0911
+      objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 107.783226
+      objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463598815685072392, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664377114112067109, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bd2500d04de94e344a177f54760d7e1b, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
