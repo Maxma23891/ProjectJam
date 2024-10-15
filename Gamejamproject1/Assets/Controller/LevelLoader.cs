@@ -31,7 +31,8 @@ public class LevelLoader : MonoBehaviour
     IEnumerator LoadLevel(string LoadName)
     {
         transition.SetTrigger("Start");
-        yield return new WaitForSeconds(1f);
+        yield return null;
+        // yield return new WaitForSeconds(0f);
         PlayerPrefs.SetInt("Chapter", 2);
         PlayerPrefs.Save();
         SceneManager.LoadScene(LoadName);
