@@ -11,7 +11,7 @@ public class MenuDialogue : MonoBehaviour
     public StoryScene currentScene;
     public GameObject Menu;
     private int sentenceIndex = -1;
-    private float waittime = 0.05f;
+    [SerializeField] private float waittime = 0.05f;
     private State state = State.COMPLETED;
     private bool skipping = false;
 

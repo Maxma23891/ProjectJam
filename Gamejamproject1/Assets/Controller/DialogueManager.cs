@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
 
     public GameController GameController;
 
+    [SerializeField] private float waittime = 0.05f;
     private int sentenceIndex = -1;
     private StoryScene currentScene;
     private State state = State.COMPLETED;
@@ -59,7 +60,7 @@ public class DialogueManager : MonoBehaviour
         while (state != State.COMPLETED)
         {
             TextBox.transform.GetChild(1).gameObject.GetComponent<TMP_Text>().text += text[wordIndex];
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(waittime);
             if (++wordIndex == text.Length)
             {
                 state = State.COMPLETED;
