@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e5dceea53b89947a2aeeddf5211cfe, type: 3}
   m_Name: 2-2
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - text: "\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B\u0E04\u0E38\u0E22\u0E01\u0E31\u0E1A\u0E04\u0E19\u0E41\u0E1B\u0E25\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E1A\u0E19\u0E17\u0E49\u0E2D\u0E07\u0E16\u0E19\u0E19"
+    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
   background: {fileID: 0}
   nextScene: {fileID: 0}
-  changeScene: 
+  changeScene: 3
   isChoice: 0
-  choiceText: []
+  choiceText:
+  - Text: 
+    Key: 
+    choiceScene: {fileID: 0}

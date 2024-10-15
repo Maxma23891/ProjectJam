@@ -88,11 +88,11 @@ public class DialogueManager : MonoBehaviour
     {
         ChoiceManager.Instance.SetChoice(key, value); // Store the choice
         Debug.Log($"Choice made: {key} = {PlayerPrefs.GetInt(key)}");
-        foreach (Transform child in choiceParent)
-        {
-            Destroy(child.gameObject);
-        }
         GameController.nextChoiceScene(scene);
+        for (int i = choiceParent.childCount - 1; i >= 0; i--)
+        {
+            Destroy(choiceParent.GetChild(i).gameObject);
+        }
     }
 }
 
