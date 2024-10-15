@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e829d87cca646814983894a80a8691a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: {fileID: 11400000, guid: fbf36c79939629045bec7aeecd522f96, type: 2}
+  currentScene: {fileID: 0}
   bottombar: {fileID: 583676060}
   ContinueButton: {fileID: 251578361}
 --- !u!114 &583676060

@@ -318,7 +318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 399.999, y: -54.07306}
+  m_AnchoredPosition: {x: 399.99896, y: -54.07306}
   m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395311862
@@ -825,7 +825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 199.999, y: -54.07306}
+  m_AnchoredPosition: {x: 199.99896, y: -54.07306}
   m_SizeDelta: {x: 180, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &598732587
@@ -872,7 +872,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 551441885439710045}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
         m_MethodName: ClickStart
         m_Mode: 1
@@ -1249,7 +1249,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0009765625, y: -162.17747}
+  m_AnchoredPosition: {x: -0.0009765625, y: -162.17749}
   m_SizeDelta: {x: -0.0020752, y: -324.355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1150324864
@@ -1493,7 +1493,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 551441885439710045}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
         m_MethodName: ContinueButtonClick
         m_Mode: 1
@@ -2310,6 +2310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4504569059000710634, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: SceneName
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4664377114112067109, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
       propertyPath: m_Name
       value: LevelLoader
@@ -2319,6 +2323,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+--- !u!114 &551441885439710045 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4504569059000710634, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+  m_PrefabInstance: {fileID: 551441885439710044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c40480e2a517b41b5ecb0271732c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

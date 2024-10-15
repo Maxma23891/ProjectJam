@@ -87,7 +87,7 @@ public class MenuDialogue : MonoBehaviour
         skipping = false;
         waittime = 0.05f; // Reset typing speed
         Menu.SetActive(true); // Open menu when done
-        if(PlayerPrefs.GetInt("Chapter",0) > 0){
+        if(PlayerPrefs.GetInt("Chapter",0) > 1){
             Menu.transform.GetChild(1).gameObject.SetActive(true);
         }
     }
