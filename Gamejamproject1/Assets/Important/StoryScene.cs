@@ -26,5 +26,36 @@ public class StoryScene : ScriptableObject
     {
         public string text;
         public Speaker speaker;
+        public Color textColor;  // Color for the sentence text
+        public int fontSize;     // Font size for the sentence text
+
+        // Constructor to set default values
+        public Sentence(string text, Speaker speaker)
+        {
+            this.text = text;
+            this.speaker = speaker;
+            this.textColor = Color.white;  // Default color is white
+            this.fontSize = 20;            // Default font size (can adjust as needed)
+        }
+    }
+
+    // Ensure all sentences have default colors and font sizes if not set in the inspector
+    private void OnEnable()
+    {
+        for (int i = 0; i < sentences.Count; i++)
+        {
+            // Fetch the sentence from the list
+            var sentence = sentences[i];
+
+            // Apply default values if needed
+            if (sentence.textColor == default)
+                sentence.textColor = Color.white;
+
+            if (sentence.fontSize <= 0)
+                sentence.fontSize = 20;
+            
+            // Write the modified sentence back to the list
+            sentences[i] = sentence;
+        }
     }
 }
