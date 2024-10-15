@@ -81,7 +81,7 @@ public class DialogueManager : MonoBehaviour
     private void MakeChoice(string key, int value,StoryScene scene)
     {
         ChoiceManager.Instance.SetChoice(key, value); // Store the choice
-        Debug.Log($"Choice made: {key} = {value}");
+        Debug.Log($"Choice made: {key} = {PlayerPrefs.GetInt(key)}");
         foreach (Transform child in choiceParent)
         {
             Destroy(child.gameObject);
