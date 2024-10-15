@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e829d87cca646814983894a80a8691a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: {fileID: 0}
+  currentScene: {fileID: 11400000, guid: d42028043312bd744b27b4bc496e738e, type: 2}
   bottombar: {fileID: 583676060}
   ContinueButton: {fileID: 251578361}
 --- !u!114 &583676060
@@ -485,7 +485,7 @@ MonoBehaviour:
   textBoxParent: {fileID: 1294342037}
   textBox: {fileID: 1692768668768151784, guid: e44858a33f6f4434cb58c7ca96ecfea8, type: 3}
   GameController: {fileID: 583676059}
-  waittime: 0.05
+  waitTime: 0.05
 --- !u!1 &828125490
 GameObject:
   m_ObjectHideFlags: 0
