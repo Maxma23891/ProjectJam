@@ -706,8 +706,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.005004883, y: 4}
-  m_SizeDelta: {x: 800, y: 275.48}
+  m_AnchoredPosition: {x: 0.0025126, y: 45.63}
+  m_SizeDelta: {x: 799.99, y: 358.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502755844
 MonoBehaviour:
@@ -957,8 +957,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_AnchoredPosition: {x: 113.44409, y: -77.838394}
+  m_SizeDelta: {x: -227.5363, y: -154.7923}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &667315429
 MonoBehaviour:
@@ -1126,8 +1126,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5666298, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 275, y: -0.00024414062}
   m_SizeDelta: {x: 477.9995, y: 0.00050354004}
+=======
+  m_AnchoredPosition: {x: 173.35, y: 0.000015258789}
+  m_SizeDelta: {x: 346.69, y: 0}
+>>>>>>> e9baa313677adb7b47f9bf06fccd05b494e03233
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1108805503
 MonoBehaviour:
@@ -1759,8 +1764,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 731, y: 419}
   m_SizeDelta: {x: 355.1224, y: 148.1973}
+=======
+  m_AnchoredPosition: {x: 320.73, y: 182.1}
+  m_SizeDelta: {x: 158.5365, y: 70.204}
+>>>>>>> e9baa313677adb7b47f9bf06fccd05b494e03233
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767577631
 MonoBehaviour:
@@ -1865,7 +1875,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.6
+  m_fontSize: 18.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1901,7 +1911,11 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+<<<<<<< HEAD
   m_margin: {x: 112.1004, y: 44.43614, z: 112.10044, w: 46.455933}
+=======
+  m_margin: {x: 49.985096, y: 22.853708, z: 52.090652, w: 23.820742}
+>>>>>>> e9baa313677adb7b47f9bf06fccd05b494e03233
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2148,7 +2162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
