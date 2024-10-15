@@ -9,13 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e5dceea53b89947a2aeeddf5211cfe, type: 3}
-  m_Name: Yes
+  m_Script: {fileID: 11500000, guid: 007acbfc4f974314ab54f241e8439644, type: 3}
+  m_Name: Him
   m_EditorClassIdentifier: 
-  sentences:
-  - text: Yes
-    speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
-  background: {fileID: 0}
-  nextScene: {fileID: 0}
-  isChoice: 0
-  choiceText: []
+  speakerName: "\u0E40\u0E02\u0E32"
+  textColor: {r: 1, g: 1, b: 1, a: 1}

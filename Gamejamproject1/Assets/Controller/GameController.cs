@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.AnimatedValues;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
     public StoryScene currentScene;
     public DialogueManager bottombar;
+    public GameObject ContinueButton;
     
     void Start()
     {
         bottombar.PlayScene(currentScene);
-        
     }
 
     // Update is called once per frame
@@ -68,7 +70,12 @@ public class GameController : MonoBehaviour
                 bottombar.PlayScene(currentScene);
             }
             else{
-                Debug.Log("End of the story.");
+                ContinueButton.SetActive(true);
+                ContinueButton.GetComponent<Button>().onClick.AddListener(() =>{
+                    SceneManager.LoadScene(currentScene.changeScene);
+                    PlayerPrefs.SetInt("Chapter", SceneManager.GetActiveScene().buildIndex + 1);
+                    PlayerPrefs.Save();
+                    });
             }
         }
     }

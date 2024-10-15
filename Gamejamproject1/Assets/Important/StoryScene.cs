@@ -8,6 +8,7 @@ public class StoryScene : ScriptableObject
     public List<Sentence> sentences;
     public Sprite background;
     public StoryScene nextScene;
+    public string changeScene;
     public bool isChoice;
     public List<Choice> choiceText;
 

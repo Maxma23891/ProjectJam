@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Therapist
   m_EditorClassIdentifier: 
   speakerName: "\u0E19\u0E31\u0E01\u0E08\u0E34\u0E15\u0E1A\u0E33\u0E1A\u0E31\u0E14"
-  textColor: {r: 0, g: 0, b: 0, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}

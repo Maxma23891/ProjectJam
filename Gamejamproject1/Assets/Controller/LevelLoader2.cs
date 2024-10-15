@@ -9,20 +9,12 @@ public class LevelLoader2 : MonoBehaviour
     public int Delaytime;
     public  Animator transition;
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            LoadNextLevel();
-        }
-    }
+
 
     public void LoadNextLevel()
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex +1));
     }
-
-    
 
     IEnumerator LoadLevel(int LevelIndex)
     {
