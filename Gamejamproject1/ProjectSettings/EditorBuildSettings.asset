@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameScenes/Chapter2/HellWorld/C2-HellWorld-1.unity
     guid: 91d0e6bceed02094bbe263d2fd90af36
+  - enabled: 1
+    path: Assets/GameScenes/Chapter2/nameless/nameless.unity
+    guid: b643c40bf69b64a40a90d34135a5297b
+  - enabled: 1
+    path: Assets/GameScenes/Chapter2/extraterrestrial/extraterrestrial.unity
+    guid: 8d46bcf07d6e2d6458b5570bc4dcc9f4
   m_configObjects: {}

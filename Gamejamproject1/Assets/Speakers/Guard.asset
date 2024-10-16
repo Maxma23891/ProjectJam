@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007acbfc4f974314ab54f241e8439644, type: 3}
   m_Name: Guard
   m_EditorClassIdentifier: 
-  speakerName: 
-  textColor: {r: 0, g: 0, b: 0, a: 0}
+  speakerName: "\u0E22\u0E32\u0E21"
+  textColor: {r: 1, g: 1, b: 1, a: 1}

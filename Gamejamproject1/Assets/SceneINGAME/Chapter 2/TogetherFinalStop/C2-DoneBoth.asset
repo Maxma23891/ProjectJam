@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5e5dceea53b89947a2aeeddf5211cfe, type: 3}
-  m_Name: C2-SS
+  m_Name: C2-DoneBoth
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u0E09\u0E31\u0E19\u0E40\u0E14\u0E34\u0E19\u0E25\u0E07\u0E08\u0E32\u0E01\u0E23\u0E16\u0E41\u0E25\u0E30\u0E1E\u0E1A\u0E27\u0E48\u0E32\u0E17\u0E35\u0E48\u0E17\u0E35\u0E48\u0E21\u0E32\u0E16\u0E36\u0E07\u0E04\u0E37\u0E2D\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E49\u0E2D\u0E07\u0E2A\u0E21\u0E38\u0E14\u0E41\u0E2B\u0E48\u0E07\u0E2B\u0E19\u0E36\u0E48\u0E07"
-    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
+  - text: "...\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E41\u0E25\u0E49\u0E27\u0E04\u0E48\u0E30
+      \u0E02\u0E2D\u0E1A\u0E04\u0E38\u0E13\u0E19\u0E30\u0E04\u0E30"
+    speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
     textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
     fontSize: 20
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 0e011b009857f5141b07f0ea31b23303, type: 2}
+  nextScene: {fileID: 11400000, guid: 99364172395bb8d4eb31ca6904457fca, type: 2}
   changeScene: 
   isChoice: 0
   choiceText: []
