@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5e5dceea53b89947a2aeeddf5211cfe, type: 3}
-  m_Name: C2-1Cho
+  m_Name: C2-3
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u0E23\u0E16\u0E1A\u0E31\u0E2A\u0E01\u0E33\u0E25\u0E31\u0E07\u0E2A\u0E30\u0E40\u0E17\u0E37\u0E2D\u0E19
-      \u0E25\u0E49\u0E2D\u0E23\u0E16\u0E01\u0E33\u0E25\u0E31\u0E07\u0E2B\u0E21\u0E38\u0E19"
+  - text: "\u0E23\u0E16\u0E2B\u0E22\u0E38\u0E14\u0E41\u0E25\u0E49\u0E27 \u0E41\u0E15\u0E48\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E16\u0E36\u0E07\u0E1B\u0E25\u0E32\u0E22\u0E17\u0E32\u0E07"
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.61311644, g: 1, b: 0.5896226, a: 1}
+    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
     fontSize: 20
   background: {fileID: 0}
   nextScene: {fileID: 0}
   changeScene: 
   isChoice: 1
   choiceText:
-  - Text: "\u0E25\u0E07\u0E08\u0E32\u0E01\u0E23\u0E16"
-    Key: '-'
-    choiceScene: {fileID: 11400000, guid: ab0a4fafd3066d54b9be65f2896004f7, type: 2}
   - Text: "\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E48\u0E2D"
+    Key: '-'
+    choiceScene: {fileID: 11400000, guid: 7b46606599dc85d44813fe503a4da436, type: 2}
+  - Text: "\u0E25\u0E07\u0E08\u0E32\u0E01\u0E23\u0E16"
     Key: '-'
     choiceScene: {fileID: 0}
