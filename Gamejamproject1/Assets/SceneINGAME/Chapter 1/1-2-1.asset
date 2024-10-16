@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1-2-1
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35\u0E48\u0E04\u0E48\u0E30 \u0E17\u0E35\u0E48\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19\u0E2B\u0E23\u0E2D\u0E04\u0E30"
+  - text: "\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35\u0E04\u0E48\u0E30 \u0E17\u0E35\u0E48\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19\u0E2B\u0E23\u0E2D\u0E04\u0E30"
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 20
@@ -21,7 +21,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: b41e16b9a88e0cc42b089bf00e3d35a0, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 20
-  - text: "\u0E16\u0E19\u0E19\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E19\u0E36\u0E48\u0E07\u0E19\u0E48\u0E30"
+  - text: "\u0E16\u0E19\u0E19\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E19\u0E48\u0E30"
     speaker: {fileID: 11400000, guid: b41e16b9a88e0cc42b089bf00e3d35a0, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 20
