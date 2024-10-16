@@ -15,39 +15,39 @@ MonoBehaviour:
   sentences:
   - text: Are you sure about this?
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
     isRNG: 0
     RNGText: []
   - text: I am
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
     isRNG: 0
     RNGText: []
   - text: I see. I'm not going to stop you anyway, but, y'see, It's been three years
       now, Sally.
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
     isRNG: 0
     RNGText: []
   - text: I know.
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
     isRNG: 0
     RNGText: []
   - text: geez, fine. I'll just leave you to it then. safe travels and...
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
     isRNG: 0
     RNGText: []
   - text: Try not to lose my mind. Yeah, got it.
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
     isRNG: 0
     RNGText: []
   background: {fileID: 21300000, guid: b58e3b1e28bf6014a90513ba006bdb52, type: 3}

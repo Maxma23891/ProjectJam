@@ -15,16 +15,13 @@ MonoBehaviour:
   sentences:
   - text: "\u0E1A\u0E32\u0E07\u0E04\u0E19..."
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
-    textColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 122}
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   background: {fileID: 0}
   nextScene: {fileID: 0}
   changeScene: 4
   isChoice: 0
-  choiceText:
-  - Text: 
-    Key: 
-    choiceScene: {fileID: 0}
-  - Text: 
-    Key: 
-    choiceScene: {fileID: 0}
+  isChoiceRNG: 0
+  choiceText: []

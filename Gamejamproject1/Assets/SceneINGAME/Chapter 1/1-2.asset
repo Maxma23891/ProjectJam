@@ -15,8 +15,8 @@ MonoBehaviour:
   sentences:
   - text: "1-2 \u0E04\u0E19\u0E41\u0E1B\u0E25\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E1A\u0E19\u0E17\u0E49\u0E2D\u0E07\u0E16\u0E19\u0E19"
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 1, g: 1, b: 1, a: 1}
-    fontSize: 25
+    textColor: {r: 1, g: 1, b: 1, a: 122}
+    fontSize: 19
     isRNG: 0
     RNGText: []
   background: {fileID: 21300000, guid: 111ac0614800ed24d994fdc9a8a37d45, type: 3}

@@ -16,38 +16,55 @@ MonoBehaviour:
   - text: world Receptor, 4609 AD.
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 0.48584908, b: 0.48584908, a: 0.6862745}
-    fontSize: 30
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   - text: "[[\u0E15\u0E31\u0E27\u0E41\u0E1B\u0E25\u0E20\u0E32\u0E29\u0E32]]\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E2A\u0E20\u0E32\u0E1E\u0E2A\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C"
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 0.37254903, g: 0.77254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   - text: "[[\u0E08\u0E31\u0E21\u0E1B\u0E4C\u0E0A\u0E34\u0E1B]]\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E2A\u0E20\u0E32\u0E1E\u0E14\u0E35"
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 0.37254903, g: 0.77254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   - text: "\u0E04\u0E38\u0E13\u0E40\u0E1B\u0E47\u0E19\u0E19\u0E31\u0E01\u0E40\u0E14\u0E34\u0E19\u0E17\u0E32\u0E07\u0E08\u0E32\u0E01\u0E14\u0E32\u0E27\u0E2D\u0E37\u0E48\u0E19\u0E40\u0E2B\u0E23\u0E2D\u0E04\u0E30?"
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   - text: "\u0E04\u0E38\u0E13\u0E40\u0E1B\u0E47\u0E19\u0E19\u0E31\u0E01\u0E40\u0E14\u0E34\u0E19\u0E17\u0E32\u0E07\u0E08\u0E32\u0E01\u0E14\u0E32\u0E27\u0E2D\u0E37\u0E48\u0E19\u0E40\u0E2B\u0E23\u0E2D\u0E04\u0E30?"
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   - text: "\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E44\u0E14\u0E49\u0E27\u0E48\u0E32\u0E40\u0E02\u0E32\u0E44\u0E21\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48"
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   - text: "\u0E2D\u0E37\u0E21"
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   - text: "\u0E40\u0E23\u0E32\u0E19\u0E31\u0E48\u0E07\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E23\u0E49\u0E32\u0E19\u0E01\u0E32\u0E41\u0E1F
       - \u0E09\u0E31\u0E19 \u0E41\u0E25\u0E30\u0E1C\u0E39\u0E49\u0E2B\u0E0D\u0E34\u0E07\u0E04\u0E19\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E17\u0E35\u0E48\u0E41\u0E19\u0E30\u0E19\u0E33\u0E15\u0E31\u0E27\u0E27\u0E48\u0E32\u0E0A\u0E37\u0E48\u0E2D\u0E41\u0E2D\u0E25\u0E44\u0E1E\u0E19\u0E4C"
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 375113b0c912b2c45961f098f22e70ea, type: 2}
   changeScene: 
   isChoice: 0
+  isChoiceRNG: 0
   choiceText: []

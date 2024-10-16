@@ -37,7 +37,7 @@ public class StoryScene : ScriptableObject
             this.text = text;
             this.speaker = speaker;
             this.textColor = Color.white;  // Default color is white
-            this.fontSize = 20;            // Default font size (can adjust as needed)
+            this.fontSize = 17;            // Default font size (can adjust as needed)
             this.isRNG = false;            // Default to no RNG
             this.RNGText = new List<string>();  // Initialize with an empty list
         }
@@ -54,12 +54,27 @@ public class StoryScene : ScriptableObject
             // Apply default values if needed
             if (sentence.textColor == default)
                 sentence.textColor = Color.white;
+            
+            if(sentence.textColor.a == 175){
+                sentence.textColor = Color.white;
+                sentence.textColor.a = 122;
+            }
+            
 
             if (sentence.fontSize <= 0)
-                sentence.fontSize = 20;
-            
+                sentence.fontSize = 17;
+            if(sentence.fontSize == 20){
+                sentence.fontSize = 17;
+            }
             // Write the modified sentence back to the list
             sentences[i] = sentence;
         }
     }
+
+    private string ColorToHex(Color color)
+    {
+        Color32 color32 = color; // Convert to Color32 for easier conversion
+        return $"#{color32.r:X2}{color32.g:X2}{color32.b:X2}{color32.a:X2}";
+    }
+
 }

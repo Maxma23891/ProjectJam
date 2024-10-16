@@ -15,12 +15,15 @@ MonoBehaviour:
   sentences:
   - text: '""'
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
-    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
-    fontSize: 20
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
   background: {fileID: 0}
   nextScene: {fileID: 0}
   changeScene: 
   isChoice: 1
+  isChoiceRNG: 0
   choiceText:
   - Text: "\u0E41\u0E1A\u0E1A\u0E19\u0E35\u0E49\u0E19\u0E35\u0E48\u0E40\u0E2D\u0E07
       \u0E1E\u0E2D\u0E08\u0E30\u0E40\u0E25\u0E48\u0E32\u0E43\u0E2B\u0E49\u0E1F\u0E31\u0E07\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E28\u0E32\u0E2A\u0E19\u0E32\u0E17\u0E35\u0E48\u0E27\u0E48\u0E32\u0E43\u0E2B\u0E49\u0E1F\u0E31\u0E07\u0E2B\u0E19\u0E48\u0E2D\u0E22\u0E44\u0E14\u0E49\u0E44\u0E2B\u0E21"
