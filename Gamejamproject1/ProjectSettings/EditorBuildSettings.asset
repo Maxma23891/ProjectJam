@@ -56,4 +56,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameScenes/Chapter2/extraterrestrial/extraterrestrial.unity
     guid: 8d46bcf07d6e2d6458b5570bc4dcc9f4
+  - enabled: 1
+    path: Assets/GameScenes/Chapter3/MainC3/MainC3.unity
+    guid: 1734e3f0922ecba408f2b99bd2bb32d3
+  - enabled: 1
+    path: Assets/GameScenes/Chapter3/C3Rel1/C3Rel.unity
+    guid: 5b5773af000e6134cb4abbab6e92a47e
   m_configObjects: {}
