@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5e5dceea53b89947a2aeeddf5211cfe, type: 3}
-  m_Name: C2-SS-5-Person
+  m_Name: C2-SS-9-Broadcast
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u0E04\u0E38\u0E13\u0E16\u0E32\u0E21\u0E16\u0E36\u0E07\u0E01\u0E32\u0E23\u0E15\u0E32\u0E21\u0E2B\u0E32\u0E04\u0E19"
+  - text: '   '
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
     fontSize: 20
     isRNG: 0
     RNGText: []
   background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: de5cb4a987d082c4cb4f5038f7854cdb, type: 2}
-  changeScene: 
+  nextScene: {fileID: 0}
+  changeScene: C2-Broadcast-1
   isChoice: 0
   isChoiceRNG: 0
   choiceText: []

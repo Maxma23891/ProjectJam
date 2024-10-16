@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d194e16bc74b994d8fddc499c11e440, type: 3}
+  m_Name: C2-SS-4-After3Question
+  m_EditorClassIdentifier: 
+  sentences: []
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  changeScene: 
+  isChoice: 0
+  isChoiceRNG: 0
+  choiceText: []
+  scenes:
+  - targetScene: {fileID: 11400000, guid: ed445a73ccdc47f40b89b5fca0a36180, type: 2}
+    keyConditions:
+    - AskCake
+    - AskPerson
+    - AskLib
+  normalScene: {fileID: 11400000, guid: 4a5e4167b8698794fa46e9ab8e26c36e, type: 2}

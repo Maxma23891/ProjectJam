@@ -26,11 +26,11 @@ MonoBehaviour:
   isChoiceRNG: 0
   choiceText:
   - Text: "\u0E16\u0E32\u0E21\u0E16\u0E36\u0E07\u0E23\u0E49\u0E32\u0E19\u0E40\u0E04\u0E49\u0E01"
-    Key: '-'
+    Key: AskCake
     choiceScene: {fileID: 11400000, guid: caf9cfe681db3fc4190a27dfb5fdaeb1, type: 2}
   - Text: "\u0E16\u0E32\u0E21\u0E16\u0E36\u0E07\u0E01\u0E32\u0E23\u0E15\u0E32\u0E21\u0E2B\u0E32\u0E04\u0E19"
-    Key: '-'
-    choiceScene: {fileID: 0}
+    Key: AskPerson
+    choiceScene: {fileID: 11400000, guid: caf9cfe681db3fc4190a27dfb5fdaeb1, type: 2}
   - Text: "\u0E16\u0E32\u0E21\u0E16\u0E36\u0E07\u0E2A\u0E32\u0E40\u0E2B\u0E15\u0E38\u0E17\u0E35\u0E48\u0E04\u0E19\u0E21\u0E32\u0E2B\u0E49\u0E2D\u0E07\u0E2A\u0E21\u0E38\u0E14"
-    Key: '-'
-    choiceScene: {fileID: 0}
+    Key: AskLib
+    choiceScene: {fileID: 11400000, guid: 055e6abc77097514d8b410d4531fcb6c, type: 2}

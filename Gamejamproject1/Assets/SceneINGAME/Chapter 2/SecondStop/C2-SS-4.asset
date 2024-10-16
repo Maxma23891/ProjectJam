@@ -28,7 +28,7 @@ MonoBehaviour:
     isRNG: 0
     RNGText: []
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 4a5e4167b8698794fa46e9ab8e26c36e, type: 2}
   changeScene: 
   isChoice: 0
   isChoiceRNG: 0

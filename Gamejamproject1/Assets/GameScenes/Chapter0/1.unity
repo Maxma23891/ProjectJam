@@ -310,6 +310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 4664377114112067109, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4504569059000710634, guid: 4cd42af7cfa742b4c97dbc84dd270117, type: 3}
     m_RemovedGameObjects: []
@@ -638,7 +642,7 @@ MonoBehaviour:
   textBoxParent: {fileID: 1294342037}
   textBox: {fileID: 1692768668768151784, guid: e44858a33f6f4434cb58c7ca96ecfea8, type: 3}
   GameController: {fileID: 583676059}
-  waittime: 0.05
+  waitTime: 0.05
 --- !u!1 &828125490
 GameObject:
   m_ObjectHideFlags: 0

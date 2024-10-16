@@ -20,10 +20,13 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
     fontSize: 20
-  background: {fileID: 0}
+    isRNG: 0
+    RNGText: []
+  background: {fileID: 21300000, guid: 595fcfd45f5283f4182277b32608280f, type: 3}
   nextScene: {fileID: 0}
   changeScene: 
   isChoice: 1
+  isChoiceRNG: 0
   choiceText:
   - Text: "\u0E09\u0E31\u0E19\u0E2B\u0E25\u0E31\u0E1A\u0E15\u0E32\u0E25\u0E07 "
     Key: '-'
