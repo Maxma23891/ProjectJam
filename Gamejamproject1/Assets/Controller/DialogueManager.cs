@@ -43,7 +43,6 @@ public class DialogueManager : MonoBehaviour
         TMP_Text textComponent = obj.transform.GetChild(1).GetComponent<TMP_Text>();
 
         StoryScene.Sentence currentSentence = currentScene.sentences[++sentenceIndex];
-
         textComponent.color = currentSentence.textColor;
         textComponent.fontSize = currentSentence.fontSize;
 
@@ -51,7 +50,14 @@ public class DialogueManager : MonoBehaviour
         speakerText.text = currentSentence.speaker.speakerName;
         speakerText.color = currentSentence.speaker.textColor;
 
-        StartCoroutine(TypeText(currentSentence.text, textComponent));
+        if(currentSentence.isRNG){
+            int random = Random.Range(0, currentSentence.RNGText.Count);
+            List<string> randomText = currentSentence.RNGText;
+            StartCoroutine(TypeText(randomText[random], textComponent));
+        }
+        else{
+            StartCoroutine(TypeText(currentSentence.text, textComponent));
+        }
     }
 
     public bool IsCompleted()

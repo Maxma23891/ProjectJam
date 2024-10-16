@@ -29,7 +29,8 @@ public class StoryScene : ScriptableObject
         public Speaker speaker;
         public Color textColor;  // Color for the sentence text
         public int fontSize;     // Font size for the sentence text
-
+        public bool isRNG;
+        public List<string> RNGText;
         // Constructor to set default values
         public Sentence(string text, Speaker speaker)
         {
@@ -37,6 +38,8 @@ public class StoryScene : ScriptableObject
             this.speaker = speaker;
             this.textColor = Color.white;  // Default color is white
             this.fontSize = 20;            // Default font size (can adjust as needed)
+            this.isRNG = false;            // Default to no RNG
+            this.RNGText = new List<string>();  // Initialize with an empty list
         }
     }
 

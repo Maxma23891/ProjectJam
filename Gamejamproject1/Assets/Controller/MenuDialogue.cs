@@ -42,7 +42,6 @@ public class MenuDialogue : MonoBehaviour
         TMP_Text textComponent = obj.transform.GetChild(1).GetComponent<TMP_Text>();
 
         StoryScene.Sentence currentSentence = currentScene.sentences[++sentenceIndex];
-
         textComponent.color = currentSentence.textColor;
         textComponent.fontSize = currentSentence.fontSize;
 
