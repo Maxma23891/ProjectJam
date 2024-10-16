@@ -1,8 +1,8 @@
-// OptionsMenu.cs
+
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AudioOptionsMenu : MonoBehaviour // เปลี่ยนชื่อคลาส
+public class AudioOptionsMenu : MonoBehaviour 
 {
     public Slider volumeSlider;
 

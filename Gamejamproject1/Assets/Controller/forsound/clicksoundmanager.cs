@@ -28,13 +28,13 @@ public class SoundManager : MonoBehaviour
 
     public void PlayClickSound()
     {
-        audioSource.Play(); // เล่นเสียงคลิก
+        audioSource.Play(); 
     }
 
-    // ฟังก์ชันปรับระดับเสียง
+    
     public void SetVolume(float volume)
     {
-        audioSource.volume = volume; // ปรับระดับเสียงของ AudioSource
-        PlayerPrefs.SetFloat("ClickVolume", volume); // บันทึกค่าระดับเสียง
+        audioSource.volume = volume; 
+        PlayerPrefs.SetFloat("ClickVolume", volume); 
     }
 }

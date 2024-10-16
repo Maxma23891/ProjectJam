@@ -7,11 +7,11 @@ public class ExitGameButton : MonoBehaviour
         // แสดงข้อความใน Console
         Debug.Log("Exiting game...");
 
-        // ถ้าในโหมด Editor
+
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; // หยุดการเล่นใน Editor
+        UnityEditor.EditorApplication.isPlaying = false;
 #else
-            Application.Quit(); // ออกจากเกมเมื่อใน Build
+            Application.Quit(); 
 #endif
     }
 }

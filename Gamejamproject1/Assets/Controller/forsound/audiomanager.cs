@@ -3,43 +3,40 @@ using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance; // Singleton instance
-    public AudioSource audioSource; // Reference to the AudioSource
-    public AudioClip backgroundMusic; // Background music
+    public static AudioManager instance;
+    public AudioSource audioSource;
+    public AudioClip backgroundMusic;
 
     private void Awake()
     {
-        // Check if instance already exists
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Prevent GameObject from being destroyed when switching scenes
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject); // Destroy this GameObject if instance already exists
+            Destroy(gameObject);
         }
     }
 
     void Start()
     {
-        // Start playing background music
         if (audioSource != null && backgroundMusic != null)
         {
             audioSource.clip = backgroundMusic;
             audioSource.loop = true;
-            audioSource.volume = PlayerPrefs.GetFloat("volume", 1); // Load saved volume
+            audioSource.volume = PlayerPrefs.GetFloat("volume", 1);
             audioSource.Play();
         }
     }
 
-    // Method to set the volume from the Options slider
     public void SetVolume(float value)
     {
         if (audioSource != null)
         {
-            audioSource.volume = value; // Update audio source volume
-            PlayerPrefs.SetFloat("volume", value); // Save volume setting
+            audioSource.volume = value;
+            PlayerPrefs.SetFloat("volume", value);
             PlayerPrefs.Save();
         }
     }

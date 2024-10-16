@@ -2155,7 +2155,7 @@ GameObject:
   - component: {fileID: 2114892591}
   - component: {fileID: 2114892592}
   m_Layer: 0
-  m_Name: clickmenucontroiier
+  m_Name: clickmenucontroller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
