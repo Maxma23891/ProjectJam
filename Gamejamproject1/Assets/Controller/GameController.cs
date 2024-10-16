@@ -14,6 +14,9 @@ public class GameController : MonoBehaviour
     void Start()
     {
         bottombar.PlayScene(currentScene);
+
+        PlayerPrefs.SetInt("Chapter", SceneManager.GetActiveScene().buildIndex);
+        PlayerPrefs.Save();
     }
 
     // Update is called once per frame
@@ -73,8 +76,10 @@ public class GameController : MonoBehaviour
                 ContinueButton.SetActive(true);
                 ContinueButton.GetComponent<Button>().onClick.AddListener(() =>{
                     SceneManager.LoadScene(currentScene.changeScene);
-                    PlayerPrefs.SetInt("Chapter", SceneManager.GetActiveScene().buildIndex + 1);
-                    PlayerPrefs.Save();
+                    if(SceneManager.GetActiveScene().buildIndex == 2){
+                        PlayerPrefs.SetInt("Chapter", SceneManager.GetActiveScene().buildIndex + 1);
+                        PlayerPrefs.Save();
+                    }
                     });
             }
         }
