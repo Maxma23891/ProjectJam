@@ -13,6 +13,31 @@ MonoBehaviour:
   m_Name: 1-1
   m_EditorClassIdentifier: 
   sentences:
+  - text: Are you sure about this?
+    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
+    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
+    fontSize: 20
+  - text: I am
+    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
+    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
+    fontSize: 20
+  - text: I see. I'm not going to stop you anyway, but, y'see, It's been three years
+      now, Sally.
+    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
+    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
+    fontSize: 20
+  - text: I know.
+    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
+    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
+    fontSize: 20
+  - text: geez, fine. I'll just leave you to it then. safe travels and...
+    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
+    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
+    fontSize: 20
+  - text: Try not to lose my mind. Yeah, got it.
+    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
+    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
+    fontSize: 20
   - text: 'Chapter 1                              '
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
