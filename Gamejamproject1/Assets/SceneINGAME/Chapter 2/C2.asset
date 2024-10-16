@@ -15,11 +15,15 @@ MonoBehaviour:
   sentences:
   - text: "\u0E40\u0E18\u0E2D\u0E1A\u0E49\u0E32\u0E23\u0E36\u0E40\u0E1B\u0E25\u0E48\u0E32"
     speaker: {fileID: 11400000, guid: b41e16b9a88e0cc42b089bf00e3d35a0, type: 2}
-    textColor: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 0.6862745}
+    textColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
     fontSize: 20
   - text: "\u0E17\u0E33\u0E44\u0E21\u0E40\u0E2B\u0E23\u0E2D?"
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
-    textColor: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 0.6862745}
+    textColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
+    fontSize: 20
+  - text: "\u0E40\u0E18\u0E2D\u0E27\u0E32\u0E07\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E15\u0E32\u0E21\u0E2B\u0E32\u0E40\u0E02\u0E32\u0E14\u0E49\u0E27\u0E22\u0E20\u0E32\u0E1E\u0E40\u0E04\u0E49\u0E01\u0E17\u0E35\u0E48\u0E01\u0E34\u0E19\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E04\u0E23\u0E36\u0E48\u0E07\u0E01\u0E49\u0E2D\u0E19\u0E40\u0E19\u0E35\u0E48\u0E22\u0E19\u0E30"
+    speaker: {fileID: 11400000, guid: b41e16b9a88e0cc42b089bf00e3d35a0, type: 2}
+    textColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
     fontSize: 20
   background: {fileID: 0}
   nextScene: {fileID: 0}
