@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e5dceea53b89947a2aeeddf5211cfe, type: 3}
+  m_Name: 1-2-1-choice
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: . . . ??
+    speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 20
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  changeScene: 
+  isChoice: 1
+  choiceText:
+  - Text: "\u0E1A\u0E32\u0E07\u0E04\u0E19"
+    Key: "\u0E15\u0E32\u0E21\u0E2B\u0E32\u0E41\u0E1F\u0E19"
+    choiceScene: {fileID: 11400000, guid: 5c8aa097242eb97448efe9470f67be7b, type: 2}
+  - Text: "\u0E1A\u0E32\u0E07\u0E2D\u0E22\u0E48\u0E32\u0E07"
+    Key: "\u0E15\u0E32\u0E21\u0E2B\u0E32\u0E40\u0E04\u0E49\u0E01"
+    choiceScene: {fileID: 11400000, guid: 0df59533df95a144a8a409854360b06b, type: 2}
