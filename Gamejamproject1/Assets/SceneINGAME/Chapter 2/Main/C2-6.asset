@@ -54,7 +54,7 @@ MonoBehaviour:
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 20
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 12d8d1ad15786524c8c66e11ab6cdcf3, type: 2}
   changeScene: 
   isChoice: 0
   choiceText: []
