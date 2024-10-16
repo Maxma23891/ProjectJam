@@ -15,7 +15,7 @@ MonoBehaviour:
   sentences:
   - text: "\u0E1A\u0E32\u0E07\u0E2D\u0E22\u0E48\u0E32\u0E07..."
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 0.6862745}
+    textColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 0.6862745}
     fontSize: 30
   background: {fileID: 0}
   nextScene: {fileID: 0}
