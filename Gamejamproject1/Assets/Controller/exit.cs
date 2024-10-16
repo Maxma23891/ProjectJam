@@ -4,7 +4,7 @@ public class ExitGameButton : MonoBehaviour
 {
     public void ExitGame()
     {
-        // แสดงข้อความใน Console
+        
         Debug.Log("Exiting game...");
 
 

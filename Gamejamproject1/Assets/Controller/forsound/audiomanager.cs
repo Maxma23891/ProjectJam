@@ -51,7 +51,7 @@ public class AudioManager : MonoBehaviour
             case "askbf":
             case "askcake":
             case "asklib":
-            case "C2-Broadcast-1":
+            
             case "extraterrestrial":
             case "C2-1S-1":
             case "C2-1S-2":
@@ -61,6 +61,9 @@ public class AudioManager : MonoBehaviour
             case "C2-Second-1":
             case "C2-Together-1":
                 newMusic = Resources.Load<AudioClip>("sound/lofi"); // ใช้เสียง lofi สำหรับ Scene เหล่านี้
+                break;
+            case "C2 - Broadcast - 1":
+                newMusic = Resources.Load<AudioClip>("sound/Brownnoise 2");
                 break;
             // สามารถเพิ่มเคสสำหรับ Scene อื่น ๆ ได้
             default:
