@@ -27,4 +27,4 @@ MonoBehaviour:
     choiceScene: {fileID: 11400000, guid: 5c8aa097242eb97448efe9470f67be7b, type: 2}
   - Text: "\u0E1A\u0E32\u0E07\u0E2D\u0E22\u0E48\u0E32\u0E07"
     Key: "\u0E15\u0E32\u0E21\u0E2B\u0E32\u0E40\u0E04\u0E49\u0E01"
-    choiceScene: {fileID: 11400000, guid: 0df59533df95a144a8a409854360b06b, type: 2}
+    choiceScene: {fileID: 11400000, guid: 22722004f36a7474a8181851defbf63d, type: 2}
