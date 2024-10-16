@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    private static SoundManager instance; // ใช้สำหรับเก็บ instance เดียว
+    private static SoundManager instance; // ใช้เก็บ instance เดียว
     private AudioSource audioSource;
 
     void Awake()
     {
-        // ตรวจสอบว่ามี instance อยู่แล้วหรือไม่
+        // ตรวจสอบว่า instance ถูกสร้างขึ้นหรือไม่
         if (instance == null)
         {
             instance = this;
@@ -23,10 +23,18 @@ public class SoundManager : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = Resources.Load<AudioClip>("sound/click"); // โหลดเสียงคลิก
+        audioSource.volume = PlayerPrefs.GetFloat("ClickVolume", 1f); // โหลดค่าระดับเสียงที่เก็บไว้ (ถ้ามี)
     }
 
     public void PlayClickSound()
     {
         audioSource.Play(); // เล่นเสียงคลิก
+    }
+
+    // ฟังก์ชันปรับระดับเสียง
+    public void SetVolume(float volume)
+    {
+        audioSource.volume = volume; // ปรับระดับเสียงของ AudioSource
+        PlayerPrefs.SetFloat("ClickVolume", volume); // บันทึกค่าระดับเสียง
     }
 }
