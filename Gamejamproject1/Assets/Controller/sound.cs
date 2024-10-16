@@ -31,8 +31,15 @@ public class VolumeControl : MonoBehaviour
     // ฟังก์ชันที่ใช้ควบคุมระดับเสียง
     public void SetVolume(float value)
     {
-        audioSource.volume = value;  // ตั้งค่าเสียงของ AudioSource
-        PlayerPrefs.SetFloat("volume", value);  // บันทึกค่าระดับเสียงลงใน PlayerPrefs
-        PlayerPrefs.Save();  // บันทึกลงดิสก์
+        if (audioSource != null) // ตรวจสอบว่า audioSource มีการตั้งค่า
+        {
+            audioSource.volume = value;  // ตั้งค่าเสียงของ AudioSource
+            PlayerPrefs.SetFloat("volume", value);  // บันทึกค่าระดับเสียงลงใน PlayerPrefs
+            PlayerPrefs.Save();  // บันทึกลงดิสก์
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource is not assigned!");
+        }
     }
 }
