@@ -19,6 +19,6 @@ MonoBehaviour:
     fontSize: 20
   background: {fileID: 0}
   nextScene: {fileID: 0}
-  changeScene: C2-Hell-1
+  changeScene: C2-HellStop-1
   isChoice: 0
   choiceText: []

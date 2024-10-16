@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/GameScenes/Chapter2/AloneFinal/C2-Alone-1.unity
     guid: 2c65d87789c08fc4980f6f5e7226306a
   - enabled: 1
-    path: Assets/GameScenes/Chapter2/HellStop/C2-Hell-1.unity
+    path: Assets/GameScenes/Chapter2/HellStop/C2-HellStop-1.unity
     guid: c9146863014604b4c9eaf85799c29bc7
   - enabled: 1
     path: Assets/GameScenes/Chapter2/TogetherFinal/C2-Together-1.unity
@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameScenes/Chapter2/SecondStop/C2-Second-1.unity
     guid: 1e494fb9223ec554ab16e35f033bc2ed
+  - enabled: 1
+    path: Assets/GameScenes/Chapter2/HellWorld/C2-HellWorld-1.unity
+    guid: 91d0e6bceed02094bbe263d2fd90af36
   m_configObjects: {}
