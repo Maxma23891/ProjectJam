@@ -35,7 +35,5 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 111e4e8f7e0b91041b7d479d40ce487b, type: 2}
   changeScene: 
   isChoice: 0
-  choiceText:
-  - Text: 
-    Key: 
-    choiceScene: {fileID: 0}
+  isChoiceRNG: 0
+  choiceText: []

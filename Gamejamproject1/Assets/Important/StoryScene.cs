@@ -10,6 +10,7 @@ public class StoryScene : ScriptableObject
     public StoryScene nextScene;
     public string changeScene;
     public bool isChoice;
+    public bool isChoiceRNG;
     public List<Choice> choiceText;
 
     [System.Serializable]

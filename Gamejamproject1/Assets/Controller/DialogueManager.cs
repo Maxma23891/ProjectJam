@@ -95,11 +95,32 @@ public class DialogueManager : MonoBehaviour
             obj.GetComponent<Button>().onClick.AddListener(() => MakeChoice(choices.Key, 1, choices.choiceScene));
         }
     }
+
+    private void RandomChoice(StoryScene scene){
+        bool isCorrect = Random.value > 0.5f;
+        Debug.Log($"Random = {isCorrect}");
+        if (isCorrect)
+        {
+            GameController.nextChoiceScene(scene);
+        }
+        else{
+            GameController.nextChoiceScene(currentScene);
+        }
+        
+    }
+
     private void MakeChoice(string key, int value, StoryScene scene)
     {
         ChoiceManager.Instance.SetChoice(key, value); // Store the choice
         Debug.Log($"Choice made: {key} = {PlayerPrefs.GetInt(key)}");
-        GameController.nextChoiceScene(scene);
+        Debug.Log(scene.isChoiceRNG);
+        if(currentScene.isChoiceRNG){
+            RandomChoice(scene);
+        }
+        else{
+            GameController.nextChoiceScene(scene);
+        }
+
         for (int i = choiceParent.childCount - 1; i >= 0; i--)
         {
             Destroy(choiceParent.GetChild(i).gameObject);
