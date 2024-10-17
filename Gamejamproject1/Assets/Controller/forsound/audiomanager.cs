@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource audioSource; // อ้างอิงถึง AudioSource ที่จะควบคุม
     private AudioClip currentClip; // ใช้สำหรับติดตามคลิปเพลงที่กำลังเล่น
     private AudioSource secondaryAudioSource; // AudioSource ที่สองสำหรับการเล่นเพลงพร้อมกัน
+    private Coroutine fadeCoroutine; // เก็บข้อมูลของ Coroutine ที่ใช้ในการ fade
 
     private void Awake()
     {
@@ -43,14 +44,24 @@ public class AudioManager : MonoBehaviour
 
     private void ChangeBackgroundMusic(string sceneName)
     {
+        // โหลดระดับเสียงที่ผู้ใช้ตั้งค่าไว้จาก PlayerPrefs
+        float defaultVolume = PlayerPrefs.GetFloat("volume", 1f); // กำหนดค่าเริ่มต้นเป็น 1 หากยังไม่มีการตั้งค่า
+
+        // หากมีการ fade อยู่ ให้หยุดการ fade ก่อน
+        if (fadeCoroutine != null)
+        {
+            StopCoroutine(fadeCoroutine);
+            fadeCoroutine = null;
+        }
+
         if (sceneName == "C5-Main")
         {
             // โหลดเพลง menu และ Brownnoise 2
-            AudioClip menuMusic = Resources.Load<AudioClip>("sound/menu");
+            AudioClip menuMusic = Resources.Load<AudioClip>("sound/c5");
             AudioClip brownNoiseMusic = Resources.Load<AudioClip>("sound/Brownnoise 2");
 
             // เริ่มต้นเล่นทั้งสองเพลงพร้อมกัน โดยทำการ fade
-            StartCoroutine(PlayAndFadeBothMusic(menuMusic, brownNoiseMusic, 5f)); // fade 5 วินาที
+            fadeCoroutine = StartCoroutine(PlayAndFadeBothMusic(menuMusic, brownNoiseMusic, 5f)); // fade 5 วินาที
         }
         else
         {
@@ -61,6 +72,16 @@ public class AudioManager : MonoBehaviour
             {
                 case "Menu":
                     newMusic = Resources.Load<AudioClip>("sound/Menu");
+
+                    // หยุดเสียง secondaryAudioSource เพื่อหยุด Brownnoise 2
+                    if (secondaryAudioSource.isPlaying)
+                    {
+                        secondaryAudioSource.Stop();
+                    }
+
+                    // ปรับเสียงกลับมาเป็นค่าเริ่มต้น (defaultVolume)
+                    audioSource.volume = defaultVolume;
+
                     break;
                 case "option":
                     newMusic = Resources.Load<AudioClip>("sound/menu");
@@ -69,6 +90,7 @@ public class AudioManager : MonoBehaviour
                 case "C2-Alone-1":
                 case "askbf":
                 case "askcake":
+                case "C2-Second-2":
                 case "asklib":
                 case "extraterrestrial":
                 case "C2-1S-1":
@@ -79,13 +101,15 @@ public class AudioManager : MonoBehaviour
                 case "C2-1nameless":
                 case "C2-Second-1":
                 case "C2-Together-1":
+                case "MainC3":
+                case "MainC3-Outside":
                     newMusic = Resources.Load<AudioClip>("sound/lofi");
                     break;
                 case "C2-Broadcast-1":
                     newMusic = Resources.Load<AudioClip>("sound/Brownnoise 2");
                     break;
                 case "C4M":
-                
+
                 case "C4NS":
                     newMusic = Resources.Load<AudioClip>("sound/Sound -Special");
                     break;
@@ -110,7 +134,7 @@ public class AudioManager : MonoBehaviour
                 }
                 else
                 {
-                    audioSource.volume = PlayerPrefs.GetFloat("volume", 1); // โหลดระดับเสียง
+                    audioSource.volume = defaultVolume; // ตั้งค่าเสียงเป็นระดับที่ผู้ใช้ตั้งค่าไว้
                 }
 
                 PlayBackgroundMusic(); // เล่นเพลงเดียวแบบปกติ ไม่ทำ fade
