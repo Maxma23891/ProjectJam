@@ -19,7 +19,7 @@ MonoBehaviour:
     fontSize: 17
     isRNG: 0
     RNGText: []
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: c1cda4c9dc0c7d94d8f959c826ba2d7b, type: 3}
   nextScene: {fileID: 11400000, guid: 99ff5c73d580684488d8118a339ab647, type: 2}
   changeScene: 
   isChoice: 0
