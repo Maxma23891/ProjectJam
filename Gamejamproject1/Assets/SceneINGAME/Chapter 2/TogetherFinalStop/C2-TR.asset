@@ -19,6 +19,7 @@ MonoBehaviour:
     textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
     fontSize: 17
     isRNG: 0
+    addTranslator: 0
     RNGText: []
   - text: "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E2D\u0E07\u0E14\u0E39\u0E43\u0E01\u0E25\u0E49
       \u0E46 \u0E41\u0E25\u0E49\u0E27 \u0E15\u0E36\u0E01\u0E19\u0E35\u0E49\u0E43\u0E2B\u0E0D\u0E48\u0E21\u0E2B\u0E36\u0E21\u0E32\u0E08\u0E19\u0E19\u0E48\u0E32\u0E17\u0E36\u0E48\u0E07
@@ -32,8 +33,9 @@ MonoBehaviour:
     textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
     fontSize: 17
     isRNG: 0
+    addTranslator: 0
     RNGText: []
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: 7feef16de96a3a84abf892a089eebadf, type: 3}
   nextScene: {fileID: 11400000, guid: fcca92d032a730c4198b8f5eda5189cf, type: 2}
   changeScene: 
   isChoice: 0

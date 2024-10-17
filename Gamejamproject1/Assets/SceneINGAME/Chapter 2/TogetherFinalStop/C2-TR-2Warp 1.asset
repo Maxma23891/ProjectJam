@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: C2-TR-2Warp 1
   m_EditorClassIdentifier: 
   sentences:
-  - text: ---
+  - text: .
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
-    fontSize: 17
+    textColor: {r: 1, g: 1, b: 1, a: 0}
+    fontSize: 1
     isRNG: 0
+    addTranslator: 0
     RNGText: []
   background: {fileID: 0}
   nextScene: {fileID: 0}
