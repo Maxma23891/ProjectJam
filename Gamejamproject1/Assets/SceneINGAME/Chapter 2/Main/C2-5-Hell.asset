@@ -16,9 +16,12 @@ MonoBehaviour:
   - text: ...
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
-    fontSize: 20
-  background: {fileID: 0}
+    fontSize: 17
+    isRNG: 0
+    RNGText: []
+  background: {fileID: 21300000, guid: 823a579791c00464d84d0c541e4e44fa, type: 3}
   nextScene: {fileID: 0}
   changeScene: C2-HellWorld-1
   isChoice: 0
+  isChoiceRNG: 0
   choiceText: []

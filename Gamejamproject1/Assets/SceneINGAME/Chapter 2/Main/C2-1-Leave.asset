@@ -21,7 +21,7 @@ MonoBehaviour:
     RNGText: []
   background: {fileID: 0}
   nextScene: {fileID: 0}
-  changeScene: C2-1S
+  changeScene: C2-1S-1
   isChoice: 0
   isChoiceRNG: 0
   choiceText: []
