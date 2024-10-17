@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5e5dceea53b89947a2aeeddf5211cfe, type: 3}
-  m_Name: C4-Choice3
+  m_Name: C3-idolTalk-Choice
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u0E09\u0E31\u0E19\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E08\u0E30\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E27\u0E48\u0E32\u0E40\u0E02\u0E32\u0E2B\u0E21\u0E32\u0E22\u0E16\u0E36\u0E07\u0E2D\u0E30\u0E44\u0E23"
-    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+  - text: "\u0E2E\u0E30\u0E2E\u0E30 \u0E07\u0E31\u0E49\u0E19\u0E2B\u0E23\u0E37\u0E2D?"
+    speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 17
     isRNG: 0
     RNGText: []
@@ -25,6 +25,9 @@ MonoBehaviour:
   isChoice: 1
   isChoiceRNG: 0
   choiceText:
-  - Text: "\u0E09\u0E31\u0E19\u0E16\u0E32\u0E21\u0E15\u0E48\u0E2D\u0E44\u0E1B"
+  - Text: "\u0E0A\u0E27\u0E19\u0E2D\u0E2D\u0E01\u0E44\u0E1B\u0E02\u0E49\u0E32\u0E07\u0E19\u0E2D\u0E01"
     Key: '-'
-    choiceScene: {fileID: 11400000, guid: b41176dc04f527b4bbad6674b3b5a6f9, type: 2}
+    choiceScene: {fileID: 11400000, guid: e75f5f6c4525bf344b06f3b3cc7340b5, type: 2}
+  - Text: "\u0E19\u0E31\u0E48\u0E07\u0E15\u0E48\u0E2D"
+    Key: '-'
+    choiceScene: {fileID: 0}

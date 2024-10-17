@@ -30,6 +30,7 @@ public class StoryScene : ScriptableObject
         public Color textColor;  // Color for the sentence text
         public int fontSize;     // Font size for the sentence text
         public bool isRNG;
+        public bool addTranslator;
         public List<string> RNGText;
         // Constructor to set default values
         public Sentence(string text, Speaker speaker)

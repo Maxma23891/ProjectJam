@@ -86,7 +86,7 @@ public class DialogueManager : MonoBehaviour
         state = State.COMPLETED;
 
         // If the current scene has choices, show them
-        if (currentScene.isChoice)
+        if (currentScene.isChoice && IsLastSentence())
         {
             ShowChoice();
         }

@@ -72,9 +72,18 @@ EditorBuildSettings:
     path: Assets/GameScenes/Chapter3-4/MainC3/MainC3.unity
     guid: 1734e3f0922ecba408f2b99bd2bb32d3
   - enabled: 1
+    path: Assets/GameScenes/Chapter3-4/MainC3/MainC3-Outside.unity
+    guid: 0d3846e73d8a9684fa6bf331b3dde024
+  - enabled: 1
+    path: Assets/GameScenes/Chapter3-4/CH 4 main/C4M.unity
+    guid: 3d0e228492118d745839e13f5d25f735
+  - enabled: 1
     path: Assets/GameScenes/Chapter3-4/CH4NomalSucces/C4NS.unity
     guid: 378f3e49938606942b3c5af262cd3afe
   - enabled: 1
     path: Assets/GameScenes/Chapter3-4/CH 4.9 thatisthequestiom/C4TQ.unity
     guid: 90242c8e0ade0ba4bad0fe117cb2e99f
+  - enabled: 1
+    path: Assets/GameScenes/Chapter5/C5-Main.unity
+    guid: 4b2798bca3ea6524bacfd1e452b22d9e
   m_configObjects: {}
