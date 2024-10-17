@@ -66,23 +66,52 @@ public class AudioManager : MonoBehaviour
                     newMusic = Resources.Load<AudioClip>("sound/menu");
                     break;
                 case "C2-1":
-                    newMusic = Resources.Load<AudioClip>("sound/lofi");
-                    break;
+                case "C2-Alone-1":
                 case "askbf":
                 case "askcake":
                 case "asklib":
+                case "extraterrestrial":
+                case "C2-1S-1":
+                case "C2-1S-2":
+                case "C2-HellStop-1":
+                case "C2-HellWorld-1":
+                case "C2-1nameless":
+                case "C2-Second-1":
+                case "C2-Together-1":
                     newMusic = Resources.Load<AudioClip>("sound/lofi");
+                    break;
+                case "C2-Broadcast-1":
+                    newMusic = Resources.Load<AudioClip>("sound/Brownnoise 2");
+                    break;
+                case "C4M":
+                case "C4TQ":
+                case "C4NS":
+                    newMusic = Resources.Load<AudioClip>("sound/Sound -Special");
                     break;
                 case "C5-Main": // เผื่อกรณีผิดพลาด
                     newMusic = Resources.Load<AudioClip>("sound/Brownnoise 2");
                     break;
-                    // เพิ่มเคสอื่นๆ ได้ที่นี่
+                // เพิ่มเคสอื่นๆ ได้ที่นี่
+                default:
+                    newMusic = null; // หากไม่พบเพลงสำหรับ Scene นี้ ให้ตั้งค่าเป็น null
+                    break;
             }
 
             // หากเป็นเพลงเดียวกันกับที่กำลังเล่นอยู่ ไม่ต้องทำอะไร
             if (newMusic != null && currentClip != newMusic)
             {
                 currentClip = newMusic;
+
+                // หากเป็นเคส "C2-Broadcast-1" ตั้งค่าเสียงเป็น 0.23
+                if (sceneName == "C2-Broadcast-1")
+                {
+                    audioSource.volume = 0.23f; // ตั้งค่าเสียง
+                }
+                else
+                {
+                    audioSource.volume = PlayerPrefs.GetFloat("volume", 1); // โหลดระดับเสียง
+                }
+
                 PlayBackgroundMusic(); // เล่นเพลงเดียวแบบปกติ ไม่ทำ fade
             }
         }
@@ -130,7 +159,6 @@ public class AudioManager : MonoBehaviour
         {
             audioSource.clip = currentClip; // กำหนดคลิปเพลง
             audioSource.loop = true; // ทำให้เพลงเล่นซ้ำ
-            audioSource.volume = PlayerPrefs.GetFloat("volume", 1); // โหลดระดับเสียง
             if (!audioSource.isPlaying) // ตรวจสอบว่าเสียงไม่ได้เล่นอยู่
             {
                 audioSource.Play(); // เริ่มเล่นเพลง
