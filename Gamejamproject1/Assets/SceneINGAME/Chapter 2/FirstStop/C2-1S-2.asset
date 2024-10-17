@@ -21,6 +21,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
   - text: "\u0E09\u0E31\u0E19\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E42\u0E15\u0E4A\u0E30\u0E43\u0E01\u0E25\u0E49
@@ -33,11 +34,13 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: c35e02544fdb92f4ca4b3158bfe39246, type: 3}
   nextScene: {fileID: 11400000, guid: bb614d193f07d044a8fdf8754fcf67ef, type: 2}
   changeScene: 
   isChoice: 0
   isChoiceRNG: 0
   choiceText: []
+  AudioTranslate: {fileID: 0}
