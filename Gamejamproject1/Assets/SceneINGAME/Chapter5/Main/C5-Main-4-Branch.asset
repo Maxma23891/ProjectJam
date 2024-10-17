@@ -17,8 +17,8 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 17
-    isRNG: 0
     addTranslator: 0
+    isRNG: 0
     RNGText: []
   background: {fileID: 0}
   nextScene: {fileID: 0}
@@ -26,11 +26,12 @@ MonoBehaviour:
   isChoice: 0
   isChoiceRNG: 0
   choiceText: []
+  AudioTranslate: {fileID: 0}
   scenes:
   - targetScene: {fileID: 11400000, guid: 95c5bfb707fabcb46bd4baa9bee3fb14, type: 2}
     keyConditions:
     - translationDeviceOn
-  - targetScene: {fileID: 11400000, guid: 95c5bfb707fabcb46bd4baa9bee3fb14, type: 2}
+  - targetScene: {fileID: 11400000, guid: 471907197f38f4449ade4d9d5c2f313a, type: 2}
     keyConditions:
     - translationDeviceOff
   normalScene: {fileID: 11400000, guid: 95c5bfb707fabcb46bd4baa9bee3fb14, type: 2}

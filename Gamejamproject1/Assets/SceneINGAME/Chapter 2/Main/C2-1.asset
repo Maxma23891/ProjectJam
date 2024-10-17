@@ -51,7 +51,7 @@ MonoBehaviour:
     RNGText: []
   - text: "\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E44\u0E14\u0E49\u0E27\u0E48\u0E32\u0E40\u0E02\u0E32\u0E44\u0E21\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48"
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
-    textColor: {r: 1, g: 0.058823526, b: 0.123383015, a: 0.58431375}
+    textColor: {r: 1, g: 0.058823526, b: 0.123383015, a: 1}
     fontSize: 17
     addTranslator: 0
     isRNG: 0
