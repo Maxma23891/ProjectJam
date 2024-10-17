@@ -75,6 +75,7 @@ public class AudioManager : MonoBehaviour
                 case "C2-1S-2":
                 case "C2-HellStop-1":
                 case "C2-HellWorld-1":
+                case "nameless":
                 case "C2-1nameless":
                 case "C2-Second-1":
                 case "C2-Together-1":
