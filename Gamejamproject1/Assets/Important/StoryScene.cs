@@ -12,6 +12,7 @@ public class StoryScene : ScriptableObject
     public bool isChoice;
     public bool isChoiceRNG;
     public List<Choice> choiceText;
+    public AudioClip AudioTranslate;
 
     [System.Serializable]
 
@@ -29,8 +30,8 @@ public class StoryScene : ScriptableObject
         public Speaker speaker;
         public Color textColor;  // Color for the sentence text
         public int fontSize;     // Font size for the sentence text
-        public bool isRNG;
         public bool addTranslator;
+        public bool isRNG;
         public List<string> RNGText;
         // Constructor to set default values
         public Sentence(string text, Speaker speaker)
