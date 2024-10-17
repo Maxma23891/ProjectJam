@@ -805,7 +805,7 @@ MonoBehaviour:
   textBox: {fileID: 1692768668768151784, guid: e44858a33f6f4434cb58c7ca96ecfea8, type: 3}
   SoundEffectSource: {fileID: 7019799982727046161}
   GameController: {fileID: 8939789654415720212}
-  waitTime: 0
+  waitTime: 0.05
 --- !u!114 &8939789654415720212
 MonoBehaviour:
   m_ObjectHideFlags: 0
