@@ -70,9 +70,6 @@ public class GameController : MonoBehaviour
         else if (currentScene is StoryScene storyScene){
             if (storyScene.nextScene != null){
                 currentScene = storyScene.nextScene;
-                // if(currentScene.addTranslator){
-                //     currentScene.sentences.Add()
-                // }
                 bottombar.PlayScene(currentScene);
             }
             else{
@@ -105,8 +102,4 @@ public class GameController : MonoBehaviour
         }
         return true; // All conditions met
     }
-
-    // private string GenTranslator(){
-    //     return "a";
-    // }
 }

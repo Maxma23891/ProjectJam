@@ -33,6 +33,7 @@ public class LevelLoader : MonoBehaviour
         transition.SetTrigger("Start");
         yield return null;
         // yield return new WaitForSeconds(0f);
+        PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("Chapter", 2);
         PlayerPrefs.Save();
         SceneManager.LoadScene(LoadName);

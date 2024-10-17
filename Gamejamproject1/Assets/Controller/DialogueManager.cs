@@ -50,6 +50,10 @@ public class DialogueManager : MonoBehaviour
         speakerText.text = currentSentence.speaker.speakerName;
         speakerText.color = currentSentence.speaker.textColor;
 
+        // if(currentSentence.addTranslator){
+        //     currentSentence.text = "x";
+        // }
+
         if(currentSentence.isRNG){
             int random = Random.Range(0, currentSentence.RNGText.Count);
             List<string> randomText = currentSentence.RNGText;
@@ -131,6 +135,12 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(choiceParent.GetChild(i).gameObject);
         }
+    }
+
+    private string translator(){
+        string x = "abcdefghijklmnopqrstuvwxyz";
+        int ran = Random.Range(0,26);
+        return"x";
     }
 }
 

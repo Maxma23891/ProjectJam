@@ -41,6 +41,7 @@ public class StoryScene : ScriptableObject
             this.fontSize = 17;            // Default font size (can adjust as needed)
             this.isRNG = false;            // Default to no RNG
             this.RNGText = new List<string>();  // Initialize with an empty list
+            this.addTranslator = false;
         }
     }
 
