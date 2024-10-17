@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d194e16bc74b994d8fddc499c11e440, type: 3}
+  m_Name: C5-Main-4-Branch
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: 
+    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 17
+    isRNG: 0
+    addTranslator: 0
+    RNGText: []
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  changeScene: 
+  isChoice: 0
+  isChoiceRNG: 0
+  choiceText: []
+  scenes:
+  - targetScene: {fileID: 11400000, guid: 95c5bfb707fabcb46bd4baa9bee3fb14, type: 2}
+    keyConditions:
+    - translationDeviceOn
+  - targetScene: {fileID: 11400000, guid: 95c5bfb707fabcb46bd4baa9bee3fb14, type: 2}
+    keyConditions:
+    - translationDeviceOff
+  normalScene: {fileID: 11400000, guid: 95c5bfb707fabcb46bd4baa9bee3fb14, type: 2}

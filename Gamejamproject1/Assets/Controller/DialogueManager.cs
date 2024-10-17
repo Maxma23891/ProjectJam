@@ -50,9 +50,9 @@ public class DialogueManager : MonoBehaviour
         speakerText.text = currentSentence.speaker.speakerName;
         speakerText.color = currentSentence.speaker.textColor;
 
-        // if(currentSentence.addTranslator){
-        //     currentSentence.text = "x";
-        // }
+        if(currentSentence.addTranslator){
+            currentSentence.text = translator();
+        }
 
         if(currentSentence.isRNG){
             int random = Random.Range(0, currentSentence.RNGText.Count);
@@ -138,9 +138,19 @@ public class DialogueManager : MonoBehaviour
     }
 
     private string translator(){
-        string x = "abcdefghijklmnopqrstuvwxyz";
-        int ran = Random.Range(0,26);
-        return"x";
+        string result = RChar(2) + "w" + RChar(7)+"e"+ RChar(1) + " " + RChar(8) + "t" + RChar(2) + "a" + RChar(8) + "I" + RChar(1) + "k" + RChar(8) + "e" + RChar(2) + "d" + RChar(8) + " " + RChar(4) + "a" + RChar(5) + "g" + RChar(9) + "a" + RChar(0) + "e" + RChar(2) + "e" + RChar(8) + "n" + RChar(7) + " " + RChar(4) + "I" + RChar(7) + "O" + RChar(1) + "n" + RChar(3) + "g" + RChar(5) + "/." + RChar(2);
+        return result;
+    }
+    
+
+    private string RChar(int num)
+    {
+        string characters = "abcdefghijklmnopqrstuvwxyz"; // You can adjust the character set if needed
+        string result = "";
+        for(int i=0;i<num;i++){
+            result += characters[Random.Range(0,26)];
+        }
+        return result;
     }
 }
 
