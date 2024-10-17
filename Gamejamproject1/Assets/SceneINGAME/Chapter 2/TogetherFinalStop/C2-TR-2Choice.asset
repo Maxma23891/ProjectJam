@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: C2-TR-2Choice
   m_EditorClassIdentifier: 
   sentences:
-  - text: . . .
-    speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
+  - text: .
+    speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
-    fontSize: 17
+    fontSize: 1
     isRNG: 0
     addTranslator: 0
     RNGText: []
