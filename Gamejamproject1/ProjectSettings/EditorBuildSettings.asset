@@ -86,4 +86,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameScenes/Chapter5/C5-Main.unity
     guid: 4b2798bca3ea6524bacfd1e452b22d9e
+  - enabled: 1
+    path: Assets/GameScenes/ToBeContinued.unity
+    guid: 75e959ce0a8e76d4faafa00d9f719d02
   m_configObjects: {}
