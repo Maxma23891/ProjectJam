@@ -114,6 +114,12 @@ public class AudioManager : MonoBehaviour
 
                 PlayBackgroundMusic(); // เล่นเพลงเดียวแบบปกติ ไม่ทำ fade
             }
+            else if (newMusic == null)
+            {
+                // หากไม่มีเพลงสำหรับ Scene นี้ ให้หยุดเสียง
+                audioSource.Stop(); // หยุดเสียง
+                currentClip = null; // รีเซ็ต currentClip
+            }
         }
     }
 
