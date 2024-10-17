@@ -85,7 +85,7 @@ public class AudioManager : MonoBehaviour
                     newMusic = Resources.Load<AudioClip>("sound/Brownnoise 2");
                     break;
                 case "C4M":
-                case "C4TQ":
+                
                 case "C4NS":
                     newMusic = Resources.Load<AudioClip>("sound/Sound -Special");
                     break;
