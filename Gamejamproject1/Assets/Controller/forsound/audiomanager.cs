@@ -86,21 +86,11 @@ public class AudioManager : MonoBehaviour
                 case "option":
                     newMusic = Resources.Load<AudioClip>("sound/menu");
                     break;
-                case "C2-1":
-                case "C2-Alone-1":
-                case "askbf":
-                case "askcake":
-                case "C2-Second-2":
-                case "asklib":
-                case "extraterrestrial":
-                case "C2-1S-1":
+                
                 case "C2-1S-2":
-                case "C2-HellStop-1":
-                case "C2-HellWorld-1":
-                case "nameless":
-                case "C2-1nameless":
-                case "C2-Second-1":
-                case "C2-Together-1":
+                
+                case "C2-Second-2":
+                
                 case "MainC3":
                 case "MainC3-Outside":
                     newMusic = Resources.Load<AudioClip>("sound/lofi");
