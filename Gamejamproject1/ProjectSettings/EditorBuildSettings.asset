@@ -77,4 +77,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameScenes/Chapter3-4/CH 4.9 thatisthequestiom/C4TQ.unity
     guid: 90242c8e0ade0ba4bad0fe117cb2e99f
+  - enabled: 1
+    path: Assets/GameScenes/Chapter3-4/MainC3/MainC3-Outside.unity
+    guid: 0d3846e73d8a9684fa6bf331b3dde024
   m_configObjects: {}
