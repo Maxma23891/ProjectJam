@@ -20,7 +20,7 @@ MonoBehaviour:
     isRNG: 0
     addTranslator: 0
     RNGText: []
-  background: {fileID: 21300000, guid: 24f4660036d80334e85dd3c5e6b5dcc0, type: 3}
+  background: {fileID: 21300000, guid: add98f94cdaa3a3499c57ab5a214be3a, type: 3}
   nextScene: {fileID: 0}
   changeScene: 
   isChoice: 1
