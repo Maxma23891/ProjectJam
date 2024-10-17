@@ -70,6 +70,7 @@ public class GameController : MonoBehaviour
         else if (currentScene is StoryScene storyScene){
             if (storyScene.nextScene != null){
                 currentScene = storyScene.nextScene;
+                if(currentScene.)
                 bottombar.PlayScene(currentScene);
             }
             else{
