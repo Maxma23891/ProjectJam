@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject choiceButton;
     public Transform textBoxParent;
     public GameObject textBox;
+    public AudioSource SoundEffectSource;
 
     public GameController GameController;
 
@@ -138,6 +139,10 @@ public class DialogueManager : MonoBehaviour
     }
 
     private string translator(){
+        if(currentScene.AudioTranslate != null){
+            SoundEffectSource.clip = currentScene.AudioTranslate;
+            SoundEffectSource.Play();
+        }
         string result = RChar(2) + "w" + RChar(7)+"e"+ RChar(1) + " " + RChar(8) + "t" + RChar(2) + "a" + RChar(8) + "I" + RChar(1) + "k" + RChar(8) + "e" + RChar(2) + "d" + RChar(8) + " " + RChar(4) + "a" + RChar(5) + "g" + RChar(9) + "a" + RChar(0) + "e" + RChar(2) + "e" + RChar(8) + "n" + RChar(7) + " " + RChar(4) + "I" + RChar(7) + "O" + RChar(1) + "n" + RChar(3) + "g" + RChar(5) + "/." + RChar(2);
         return result;
     }
