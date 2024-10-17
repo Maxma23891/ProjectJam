@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement; // สำหรับจัดการ Scene
+using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
     public AudioSource audioSource; // อ้างอิงถึง AudioSource ที่จะควบคุม
     private AudioClip currentClip; // ใช้สำหรับติดตามคลิปเพลงที่กำลังเล่น
+    private AudioSource secondaryAudioSource; // AudioSource ที่สองสำหรับการเล่นเพลงพร้อมกัน
 
     private void Awake()
     {
@@ -21,8 +23,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void Start()
+    private void Start()
     {
+        // สร้าง secondaryAudioSource ถ้ายังไม่มี
+        if (secondaryAudioSource == null)
+        {
+            secondaryAudioSource = gameObject.AddComponent<AudioSource>();
+        }
+
         // เริ่มเล่นเสียงพื้นหลังใน Scene แรก
         ChangeBackgroundMusic(SceneManager.GetActiveScene().name);
     }
@@ -35,57 +43,85 @@ public class AudioManager : MonoBehaviour
 
     private void ChangeBackgroundMusic(string sceneName)
     {
-        AudioClip newMusic = null;
-
-        // กำหนดเพลงพื้นหลังตามชื่อ Scene
-        switch (sceneName)
+        if (sceneName == "C5-Main")
         {
-            case "Menu":
-                newMusic = Resources.Load<AudioClip>("sound/Menu");
-                break;
-            case "option":
-                newMusic = Resources.Load<AudioClip>("sound/menu");
-                break;
-            case "C2-1":
-            case "C2-Alone-1":
-            case "askbf":
-            case "askcake":
-            case "asklib":
-            
-            case "extraterrestrial":
-            case "C2-1S-1":
-            case "C2-1S-2":
-            case "C2-HellStop-1":
-            case "C2-HellWorld-1":
-            case "C2-1nameless":
-            case "C2-Second-1":
-            case "C2-Together-1":
-                newMusic = Resources.Load<AudioClip>("sound/lofi"); // ใช้เสียง lofi สำหรับ Scene เหล่านี้
-                break;
-            case "C2 - Broadcast - 1":
-                newMusic = Resources.Load<AudioClip>("sound/Brownnoise 2");
-                break;
-            // สามารถเพิ่มเคสสำหรับ Scene อื่น ๆ ได้
-            default:
-                newMusic = null; // หากไม่พบเพลงสำหรับ Scene นี้ ให้ตั้งค่าเป็น null
-                break;
-        }
+            // โหลดเพลง menu และ Brownnoise 2
+            AudioClip menuMusic = Resources.Load<AudioClip>("sound/menu");
+            AudioClip brownNoiseMusic = Resources.Load<AudioClip>("sound/Brownnoise 2");
 
-        // ตรวจสอบว่าเพลงใหม่ไม่ใช่เพลงที่กำลังเล่นอยู่
-        if (newMusic != null)
-        {
-            // ถ้าเพลงใหม่ไม่เหมือนกับเพลงที่กำลังเล่นอยู่ ให้เปลี่ยนเพลง
-            if (currentClip != newMusic)
-            {
-                currentClip = newMusic; // อัปเดตเพลงที่กำลังเล่น
-                PlayBackgroundMusic(); // เล่นเพลงใหม่
-            }
+            // เริ่มต้นเล่นทั้งสองเพลงพร้อมกัน โดยทำการ fade
+            StartCoroutine(PlayAndFadeBothMusic(menuMusic, brownNoiseMusic, 5f)); // fade 5 วินาที
         }
         else
         {
-            // ถ้า newMusic เป็น null ให้เปลี่ยนเสียงเป็น "none"
-            StopBackgroundMusic(); // หยุดเสียง
+            // กรณีอื่นๆ ที่ไม่ใช่ C5-Main เล่นเพลงเดียวโดยไม่ทำ fade
+            AudioClip newMusic = null;
+
+            switch (sceneName)
+            {
+                case "Menu":
+                    newMusic = Resources.Load<AudioClip>("sound/Menu");
+                    break;
+                case "option":
+                    newMusic = Resources.Load<AudioClip>("sound/menu");
+                    break;
+                case "C2-1":
+                    newMusic = Resources.Load<AudioClip>("sound/lofi");
+                    break;
+                case "askbf":
+                case "askcake":
+                case "asklib":
+                    newMusic = Resources.Load<AudioClip>("sound/lofi");
+                    break;
+                case "C5-Main": // เผื่อกรณีผิดพลาด
+                    newMusic = Resources.Load<AudioClip>("sound/Brownnoise 2");
+                    break;
+                    // เพิ่มเคสอื่นๆ ได้ที่นี่
+            }
+
+            // หากเป็นเพลงเดียวกันกับที่กำลังเล่นอยู่ ไม่ต้องทำอะไร
+            if (newMusic != null && currentClip != newMusic)
+            {
+                currentClip = newMusic;
+                PlayBackgroundMusic(); // เล่นเพลงเดียวแบบปกติ ไม่ทำ fade
+            }
         }
+    }
+
+    private IEnumerator PlayAndFadeBothMusic(AudioClip menuClip, AudioClip brownNoiseClip, float duration)
+    {
+        // ตั้งค่า AudioSource หลักสำหรับเล่นเพลง menu
+        audioSource.clip = menuClip;
+        audioSource.loop = true;
+        audioSource.volume = 1f; // เริ่มเสียง menu ที่ระดับเต็ม
+        audioSource.Play();
+
+        // ตั้งค่า secondaryAudioSource สำหรับเล่นเพลง Brownnoise 2
+        secondaryAudioSource.clip = brownNoiseClip;
+        secondaryAudioSource.loop = true;
+        secondaryAudioSource.volume = 0f; // เริ่มเสียง brownnoise ที่ระดับ 0
+        secondaryAudioSource.Play();
+
+        float timer = 0f;
+
+        // ทำการ fade ทั้งสองเสียงพร้อมกัน
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            float progress = timer / duration;
+
+            // ค่อย ๆ ลดเสียงของ menu ลง
+            audioSource.volume = Mathf.Lerp(1f, 0f, progress);
+
+            // ค่อย ๆ เพิ่มเสียงของ Brownnoise 2 ขึ้น
+            secondaryAudioSource.volume = Mathf.Lerp(0f, 1f, progress);
+
+            yield return null;
+        }
+
+        // เมื่อ fade เสร็จสิ้น, ทำให้ Brownnoise 2 ดังเต็มที่ และปิดเสียง menu
+        audioSource.volume = 0f; // ปิดเสียง menu
+        secondaryAudioSource.volume = 1f; // เสียง Brownnoise 2 ดังเต็มที่
     }
 
     private void PlayBackgroundMusic()
@@ -99,15 +135,6 @@ public class AudioManager : MonoBehaviour
             {
                 audioSource.Play(); // เริ่มเล่นเพลง
             }
-        }
-    }
-
-    private void StopBackgroundMusic()
-    {
-        if (audioSource != null)
-        {
-            audioSource.Stop(); // หยุดการเล่นเสียง
-            currentClip = null; // รีเซ็ตคลิปเพลงที่กำลังเล่น
         }
     }
 
