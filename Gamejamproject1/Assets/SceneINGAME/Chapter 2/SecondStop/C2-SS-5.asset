@@ -17,11 +17,13 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: 712fdf23a07f8cc489616a310cdfd6a9, type: 3}
   nextScene: {fileID: 11400000, guid: 34bd949e53fe71e469585a62de768f12, type: 2}
   changeScene: 
   isChoice: 0
   isChoiceRNG: 0
   choiceText: []
+  AudioTranslate: {fileID: 0}

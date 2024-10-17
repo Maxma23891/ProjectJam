@@ -20,9 +20,10 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: bc66859ec98d9e14fae3d8edd9fb7144, type: 3}
   nextScene: {fileID: 0}
   changeScene: 
   isChoice: 1
@@ -37,3 +38,4 @@ MonoBehaviour:
   - Text: "\u0E40\u0E14\u0E34\u0E19\u0E44\u0E1B\u0E02\u0E49\u0E32\u0E07\u0E2B\u0E19\u0E49\u0E32"
     Key: '-'
     choiceScene: {fileID: 11400000, guid: b6c50892fee77f2479f5e34a4c71ed17, type: 2}
+  AudioTranslate: {fileID: 0}

@@ -21,6 +21,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
   - text: "\u0E19\u0E31\u0E48\u0E19\u0E23\u0E36? \u0E2A\u0E16\u0E32\u0E19\u0E35\u0E01\u0E23\u0E30\u0E08\u0E32\u0E22\u0E40\u0E2A\u0E35\u0E22\u0E07\u0E22\u0E31\u0E07\u0E44\u0E07\u0E25\u0E30\u0E04\u0E23\u0E31\u0E1A
@@ -28,12 +29,14 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 323b2be5254af854f8200b3b16beeba8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
   - text: "\u0E44\u0E21\u0E48\u0E40\u0E25\u0E22\u0E04\u0E48\u0E30"
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
   - text: "\u0E41\u0E21\u0E49\u0E41\u0E15\u0E48\u0E04\u0E23\u0E31\u0E49\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27\u0E23\u0E36?
@@ -41,6 +44,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
   - text: "\u0E40\u0E02\u0E32\u0E21\u0E2D\u0E07\u0E15\u0E32\u0E09\u0E31\u0E19\u0E14\u0E49\u0E27\u0E22\u0E41\u0E27\u0E27\u0E15\u0E32\u0E17\u0E35\u0E48\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E01\u0E33\u0E25\u0E31\u0E07\u0E40\u0E15\u0E37\u0E2D\u0E19\u0E2A\u0E15\u0E34
@@ -48,6 +52,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 6405a152de37a574d9730dd612d944c8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 0.47843137}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
   - text: "\u0E2D\u0E22\u0E48\u0E32\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E19\u0E31\u0E48\u0E19
@@ -56,35 +61,34 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 323b2be5254af854f8200b3b16beeba8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
   - text: ...
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
   - text: "...\u0E04\u0E30?"
     speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 17
-    isRNG: 0
-    RNGText: []
-  - text: "...\u0E04\u0E30?"
-    speaker: {fileID: 11400000, guid: f8558193eafdb66479b89cde742b2fea, type: 2}
-    textColor: {r: 1, g: 1, b: 1, a: 1}
-    fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
   - text: "\u0E40\u0E0A\u0E34\u0E0D\u0E04\u0E19\u0E14\u0E49\u0E32\u0E19\u0E2B\u0E25\u0E31\u0E07\u0E16\u0E32\u0E21\u0E04\u0E33\u0E16\u0E32\u0E21\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22\u0E04\u0E23\u0E31\u0E1A"
     speaker: {fileID: 11400000, guid: 323b2be5254af854f8200b3b16beeba8, type: 2}
     textColor: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 17
+    addTranslator: 0
     isRNG: 0
     RNGText: []
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: a0932e7c898e8c1449e219153a3aa4e5, type: 3}
   nextScene: {fileID: 0}
   changeScene: C2-Second-3
   isChoice: 0
   isChoiceRNG: 0
   choiceText: []
+  AudioTranslate: {fileID: 0}
