@@ -29,7 +29,4 @@ MonoBehaviour:
   - Text: "\u0E0A\u0E27\u0E19\u0E2D\u0E2D\u0E01\u0E44\u0E1B\u0E02\u0E49\u0E32\u0E07\u0E19\u0E2D\u0E01"
     Key: '-'
     choiceScene: {fileID: 11400000, guid: e75f5f6c4525bf344b06f3b3cc7340b5, type: 2}
-  - Text: "\u0E19\u0E31\u0E48\u0E07\u0E15\u0E48\u0E2D"
-    Key: '-'
-    choiceScene: {fileID: 0}
   AudioTranslate: {fileID: 0}

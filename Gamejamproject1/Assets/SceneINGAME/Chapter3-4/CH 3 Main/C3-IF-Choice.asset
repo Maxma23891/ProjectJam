@@ -31,13 +31,4 @@ MonoBehaviour:
   - Text: "\u0E14\u0E49\u0E32\u0E19\u0E28\u0E32\u0E2A\u0E19\u0E32\u0E41\u0E25\u0E30\u0E04\u0E27\u0E32\u0E21\u0E40\u0E0A\u0E37\u0E48\u0E2D"
     Key: '-'
     choiceScene: {fileID: 11400000, guid: 902c437751e15d54194d0da64e05ae3f, type: 2}
-  - Text: "\u0E14\u0E49\u0E32\u0E19\u0E20\u0E39\u0E21\u0E34\u0E28\u0E32\u0E2A\u0E15\u0E23\u0E4C"
-    Key: '-'
-    choiceScene: {fileID: 0}
-  - Text: "\u0E14\u0E49\u0E32\u0E19\u0E2A\u0E31\u0E07\u0E04\u0E21\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E1B\u0E01\u0E04\u0E23\u0E2D\u0E07"
-    Key: '-'
-    choiceScene: {fileID: 0}
-  - Text: "\u0E14\u0E49\u0E32\u0E19\u0E27\u0E34\u0E17\u0E22\u0E32\u0E01\u0E32\u0E23"
-    Key: '-'
-    choiceScene: {fileID: 0}
   AudioTranslate: {fileID: 0}

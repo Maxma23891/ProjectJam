@@ -258,7 +258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3290704838771200812
 Transform:
   m_ObjectHideFlags: 0
@@ -805,7 +805,7 @@ MonoBehaviour:
   textBox: {fileID: 1692768668768151784, guid: e44858a33f6f4434cb58c7ca96ecfea8, type: 3}
   SoundEffectSource: {fileID: 7019799982727046161}
   GameController: {fileID: 8939789654415720212}
-  waitTime: 0.05
+  waitTime: 0
 --- !u!114 &8939789654415720212
 MonoBehaviour:
   m_ObjectHideFlags: 0
